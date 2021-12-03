@@ -87,6 +87,17 @@ INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `nam
 
 
 -- Inserts for Promotional
+INSERT INTO `Sk8Shoppe`.`Promotional` (`promoId`, `releaseData`) VALUES ('1', '2000-01-01');
+INSERT INTO `Sk8Shoppe`.`Promotional` (`promoId`, `releaseData`) VALUES ('2', '2001-01-01');
+INSERT INTO `Sk8Shoppe`.`Promotional` (`promoId`, `releaseData`) VALUES ('3', '2002-01-01');
+INSERT INTO `Sk8Shoppe`.`Promotional` (`promoId`, `releaseData`) VALUES ('4', '2003-01-01');
+INSERT INTO `Sk8Shoppe`.`Promotional` (`promoId`, `releaseData`) VALUES ('5', '2004-01-01');
+INSERT INTO `Sk8Shoppe`.`Promotional` (`promoId`, `releaseData`) VALUES ('6', '2005-01-01');
+INSERT INTO `Sk8Shoppe`.`Promotional` (`promoId`, `releaseData`) VALUES ('7', '2006-01-01');
+INSERT INTO `Sk8Shoppe`.`Promotional` (`promoId`, `releaseData`) VALUES ('8', '2007-01-01');
+INSERT INTO `Sk8Shoppe`.`Promotional` (`promoId`, `releaseData`) VALUES ('9', '2008-01-01');
+INSERT INTO `Sk8Shoppe`.`Promotional` (`promoId`, `releaseData`) VALUES ('10', '2009-01-01');
+
 
 -- Inserts for shipped items
 
@@ -105,3 +116,9 @@ INSERT INTO `Sk8Shoppe`.`Team Rider` (`riderNum`, `email`, `address`, `fname`, `
 
 
 -- Inserts for Video
+INSERT INTO `Sk8Shoppe`.`Video` (`Promotional_promoId`, `Title`, `length`) VALUES ('1', 'Video A', '70');
+INSERT INTO `Sk8Shoppe`.`Video` (`Promotional_promoId`, `Title`, `length`) VALUES ('3', 'Video B', '50');
+INSERT INTO `Sk8Shoppe`.`Video` (`Promotional_promoId`, `Title`, `length`) VALUES ('5', 'Video C', '20');
+INSERT INTO `Sk8Shoppe`.`Video` (`Promotional_promoId`, `Title`, `length`) VALUES ('7', 'Video D', '90');
+INSERT INTO `Sk8Shoppe`.`Video` (`Promotional_promoId`, `Title`, `length`) VALUES ('9', 'Video E', '30');
+
