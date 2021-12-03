@@ -67,6 +67,27 @@ INSERT INTO `Sk8Shoppe`.`Discount` (`amount`) VALUES ('90');
 INSERT INTO `Sk8Shoppe`.`Discount` (`amount`) VALUES ('100');
 
 -- Inserts for Gear Set Up
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('1', '1');
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('1', '4');
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('2', '5');
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('2', '2');
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('3', '1');
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('3', '6');
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('4', '1');
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('4', '2');
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('5', '7');
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('5', '9');
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('6', '1');
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('6', '10');
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('7', '1');
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('7', '9');
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('8', '2');
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('8', '4');
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('9', '5');
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('9', '8');
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('10', '2');
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('10', '3');
+INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('1', '10');
 
 -- Inserts for Orders
 
