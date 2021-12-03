@@ -5,7 +5,6 @@ USE
 
 
 -- Inserts for Contest:
-
 INSERT INTO `Sk8Shoppe`.`Contest` (`code`, `terrain`, `date`) VALUES ('1', 'vert', '2002-10-10');
 INSERT INTO `Sk8Shoppe`.`Contest` (`code`, `terrain`, `date`) VALUES ('2', 'street', '2003-11-10');
 INSERT INTO `Sk8Shoppe`.`Contest` (`code`, `terrain`, `date`) VALUES ('3', 'vert', '2012-04-10');
@@ -18,9 +17,7 @@ INSERT INTO `Sk8Shoppe`.`Contest` (`code`, `terrain`, `date`) VALUES ('9', 'vert
 INSERT INTO `Sk8Shoppe`.`Contest` (`code`, `terrain`, `date`) VALUES ('10','park', '2021-04-20');
 
 
--- Inserts for Contestants:
-
-    
+-- Inserts for Contestants: 
 INSERT INTO `Sk8Shoppe`.`Contestant` (`contestantNum`, `ranking`, `sponsor`, `fname`, `lname`, `Contest_code`, `Product_itemNum`) VALUES ('1', '1', 'Real', 'Joe', 'Smith', '1', '1');
 INSERT INTO `Sk8Shoppe`.`Contestant` (`contestantNum`, `ranking`, `sponsor`, `fname`, `lname`, `Contest_code`, `Product_itemNum`) VALUES ('2', '2', 'Spitfire', 'Daphne', 'Jones', '1', '4');
 INSERT INTO `Sk8Shoppe`.`Contestant` (`contestantNum`, `ranking`, `sponsor`, `fname`, `lname`, `Contest_code`, `Product_itemNum`) VALUES ('3', '3', 'Bones', 'Prescila', 'Presley', '1', '8');
@@ -33,7 +30,6 @@ INSERT INTO `Sk8Shoppe`.`Contestant` (`contestantNum`, `ranking`, `sponsor`, `fn
 INSERT INTO `Sk8Shoppe`.`Contestant` (`contestantNum`, `ranking`, `sponsor`, `fname`, `lname`, `Contest_code`, `Product_itemNum`) VALUES ('10', '3', 'Real', 'Derek', 'Dirkenson', '4', '2');
 
 -- Inserts for Customer:
-
 INSERT INTO `Sk8Shoppe`.`Customer` (`customerNum`, `email`, `fname`, `lname`, `address`) VALUES ('1', 'x123@gmail.com', 'John', 'Smith', '1123 SE 17th Ave');
 INSERT INTO `Sk8Shoppe`.`Customer` (`customerNum`, `email`, `fname`, `lname`, `address`) VALUES ('2', 'x111@gmail.com', 'Jahn', 'Smooth', '1124 SE 17th Ave');
 INSERT INTO `Sk8Shoppe`.`Customer` (`customerNum`, `email`, `fname`, `lname`, `address`) VALUES ('3', 'x122@gmail.com', 'Jehn', 'Smiith', '1125 SE 17th Ave');
@@ -62,6 +58,11 @@ INSERT INTO `Sk8Shoppe`.`Discount` (`amount`) VALUES ('100');
 -- Inserts for Orders
 
 -- Inserts for Picture
+INSERT INTO `Sk8Shoppe`.`Picture` (`Promotional_promoId`, `magazine`, `trick`) VALUES ('2', 'Thrasher', 'SW FS Noseblunt');
+INSERT INTO `Sk8Shoppe`.`Picture` (`Promotional_promoId`, `magazine`, `trick`) VALUES ('4', 'Thrasher', 'BS Kickflip');
+INSERT INTO `Sk8Shoppe`.`Picture` (`Promotional_promoId`, `magazine`, `trick`) VALUES ('6', 'Skate Mag', 'FS Big Heel');
+INSERT INTO `Sk8Shoppe`.`Picture` (`Promotional_promoId`, `magazine`, `trick`) VALUES ('8', 'Skate Mag', 'Fakie BS Bigspin');
+INSERT INTO `Sk8Shoppe`.`Picture` (`Promotional_promoId`, `magazine`, `trick`) VALUES ('10', 'Thrasher', 'Nollie Treflip');
 
 -- Inserts for Product
 INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('10', '1101', 'Real', 'Deck', '100');
@@ -102,7 +103,6 @@ INSERT INTO `Sk8Shoppe`.`Promotional` (`promoId`, `releaseData`) VALUES ('10', '
 -- Inserts for shipped items
 
 -- Inserts for Team Rider
-
 INSERT INTO `Sk8Shoppe`.`Team Rider` (`riderNum`, `email`, `address`, `fname`, `lname`, `startDate`, `stance`, `status`) VALUES ('1', 'rx123@gmail.com', '6923 SE 42nd Ave', 'Ryder', 'Scoots', '2000-01-01', 'goofy', 'pro');
 INSERT INTO `Sk8Shoppe`.`Team Rider` (`riderNum`, `email`, `address`, `fname`, `lname`, `startDate`, `stance`, `status`) VALUES ('2', 'rxsk83@gmail.com', '6023 SE 482nd Ave', 'Joe', 'Scoops', '2001-01-01', 'regular', 'am');
 INSERT INTO `Sk8Shoppe`.`Team Rider` (`riderNum`, `email`, `address`, `fname`, `lname`, `startDate`, `stance`, `status`) VALUES ('3', 'rx1sk8@gmail.com', '6993 NE 421nd Ave', 'Sam', 'Scots', '2002-01-01', 'goofy', 'am');
