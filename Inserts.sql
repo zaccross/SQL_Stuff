@@ -2,6 +2,19 @@ USE
 	Sk8Shoppe;
 
 -- inserts for appears in video:
+INSERT INTO `Sk8Shoppe`.`Appears in Video` (`Team Rider_riderNum`, `Promotional_promoId`) VALUES ('1', '3');
+INSERT INTO `Sk8Shoppe`.`Appears in Video` (`Team Rider_riderNum`, `Promotional_promoId`) VALUES ('2', '1');
+INSERT INTO `Sk8Shoppe`.`Appears in Video` (`Team Rider_riderNum`, `Promotional_promoId`) VALUES ('3', '5');
+INSERT INTO `Sk8Shoppe`.`Appears in Video` (`Team Rider_riderNum`, `Promotional_promoId`) VALUES ('4', '7');
+INSERT INTO `Sk8Shoppe`.`Appears in Video` (`Team Rider_riderNum`, `Promotional_promoId`) VALUES ('5', '3');
+INSERT INTO `Sk8Shoppe`.`Appears in Video` (`Team Rider_riderNum`, `Promotional_promoId`) VALUES ('6', '1');
+INSERT INTO `Sk8Shoppe`.`Appears in Video` (`Team Rider_riderNum`, `Promotional_promoId`) VALUES ('7', '3');
+INSERT INTO `Sk8Shoppe`.`Appears in Video` (`Team Rider_riderNum`, `Promotional_promoId`) VALUES ('8', '9');
+INSERT INTO `Sk8Shoppe`.`Appears in Video` (`Team Rider_riderNum`, `Promotional_promoId`) VALUES ('8', '3');
+INSERT INTO `Sk8Shoppe`.`Appears in Video` (`Team Rider_riderNum`, `Promotional_promoId`) VALUES ('10', '9');
+INSERT INTO `Sk8Shoppe`.`Appears in Video` (`Team Rider_riderNum`, `Promotional_promoId`) VALUES ('9', '1');
+INSERT INTO `Sk8Shoppe`.`Appears in Video` (`Team Rider_riderNum`, `Promotional_promoId`) VALUES ('9', '5');
+INSERT INTO `Sk8Shoppe`.`Appears in Video` (`Team Rider_riderNum`, `Promotional_promoId`) VALUES ('2', '3');
 
 
 -- Inserts for Contest:
