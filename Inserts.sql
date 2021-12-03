@@ -145,6 +145,25 @@ INSERT INTO `Sk8Shoppe`.`Promotional` (`promoId`, `releaseData`) VALUES ('10', '
 
 
 -- Inserts for shipped items
+INSERT INTO `Sk8Shoppe`.`shipped items` (`Product_itemNum`, `Orders_orderNum`) VALUES ('1', '1');
+INSERT INTO `Sk8Shoppe`.`shipped items` (`Product_itemNum`, `Orders_orderNum`) VALUES ('2', '2');
+INSERT INTO `Sk8Shoppe`.`shipped items` (`Product_itemNum`, `Orders_orderNum`) VALUES ('3', '1');
+INSERT INTO `Sk8Shoppe`.`shipped items` (`Product_itemNum`, `Orders_orderNum`) VALUES ('4', '2');
+INSERT INTO `Sk8Shoppe`.`shipped items` (`Product_itemNum`, `Orders_orderNum`) VALUES ('5', '1');
+INSERT INTO `Sk8Shoppe`.`shipped items` (`Product_itemNum`, `Orders_orderNum`) VALUES ('6', '2');
+INSERT INTO `Sk8Shoppe`.`shipped items` (`Product_itemNum`, `Orders_orderNum`) VALUES ('7', '1');
+INSERT INTO `Sk8Shoppe`.`shipped items` (`Product_itemNum`, `Orders_orderNum`) VALUES ('1', '3');
+INSERT INTO `Sk8Shoppe`.`shipped items` (`Product_itemNum`, `Orders_orderNum`) VALUES ('2', '4');
+INSERT INTO `Sk8Shoppe`.`shipped items` (`Product_itemNum`, `Orders_orderNum`) VALUES ('10', '5');
+INSERT INTO `Sk8Shoppe`.`shipped items` (`Product_itemNum`, `Orders_orderNum`) VALUES ('8', '6');
+INSERT INTO `Sk8Shoppe`.`shipped items` (`Product_itemNum`, `Orders_orderNum`) VALUES ('10', '7');
+INSERT INTO `Sk8Shoppe`.`shipped items` (`Product_itemNum`, `Orders_orderNum`) VALUES ('9', '8');
+INSERT INTO `Sk8Shoppe`.`shipped items` (`Product_itemNum`, `Orders_orderNum`) VALUES ('10', '9');
+INSERT INTO `Sk8Shoppe`.`shipped items` (`Product_itemNum`, `Orders_orderNum`) VALUES ('10', '10');
+INSERT INTO `Sk8Shoppe`.`shipped items` (`Product_itemNum`, `Orders_orderNum`) VALUES ('10', '3');
+INSERT INTO `Sk8Shoppe`.`shipped items` (`Product_itemNum`, `Orders_orderNum`) VALUES ('6', '3');
+INSERT INTO `Sk8Shoppe`.`shipped items` (`Product_itemNum`, `Orders_orderNum`) VALUES ('8', '1');
+
 
 -- Inserts for Team Rider
 INSERT INTO `Sk8Shoppe`.`Team Rider` (`riderNum`, `email`, `address`, `fname`, `lname`, `startDate`, `stance`, `status`) VALUES ('1', 'rx123@gmail.com', '6923 SE 42nd Ave', 'Ryder', 'Scoots', '2000-01-01', 'goofy', 'pro');
