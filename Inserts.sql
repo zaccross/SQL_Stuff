@@ -64,6 +64,16 @@ INSERT INTO `Sk8Shoppe`.`Discount` (`amount`) VALUES ('100');
 -- Inserts for Picture
 
 -- Inserts for Product
+INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('10', '1101', 'Real', 'Deck', '100');
+INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('1', '1201', 'Bird House', 'Grip', '40');
+INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('45', '1131', 'Creature', 'Wheels','120');
+INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('99', '2101', 'Girl', 'Bearings', '50');
+INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('103', '1301', 'CCS', 'Deck', '69');
+INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('120', '1211', 'Elememt','Complete', '420');
+INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('1000', '5101', 'Toy Machine', 'Trucks', '169');
+INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('56', '1105', 'Alien Workshop', 'Wheels', '69');
+INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('72', '1123', 'Powell Parelta','Deck', '420');
+INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('54', '1111', 'H-Street', 'Baggy Pants','42069');
 
 -- Inserts for Promotional
 
