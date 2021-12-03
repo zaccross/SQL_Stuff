@@ -46,3 +46,29 @@ INSERT INTO `Sk8Shoppe`.`Customer` (`customerNum`, `email`, `fname`, `lname`, `a
 INSERT INTO `Sk8Shoppe`.`Customer` (`customerNum`, `email`, `fname`, `lname`, `address`) VALUES ('10','x211@gmail.com', 'Johan', 'Smiaoth', '4123 SE 17th Ave');
 
 -- Inserts for Discounts
+INSERT INTO `Sk8Shoppe`.`Discount` (`amount`) VALUES ('10');
+INSERT INTO `Sk8Shoppe`.`Discount` (`amount`) VALUES ('20');
+INSERT INTO `Sk8Shoppe`.`Discount` (`amount`) VALUES ('30');
+INSERT INTO `Sk8Shoppe`.`Discount` (`amount`) VALUES ('40');
+INSERT INTO `Sk8Shoppe`.`Discount` (`amount`) VALUES ('50');
+INSERT INTO `Sk8Shoppe`.`Discount` (`amount`) VALUES ('60');
+INSERT INTO `Sk8Shoppe`.`Discount` (`amount`) VALUES ('70');
+INSERT INTO `Sk8Shoppe`.`Discount` (`amount`) VALUES ('80');
+INSERT INTO `Sk8Shoppe`.`Discount` (`amount`) VALUES ('90');
+INSERT INTO `Sk8Shoppe`.`Discount` (`amount`) VALUES ('100');
+
+-- Inserts for Gear Set Up
+
+-- Inserts for Orders
+
+-- Inserts for Picture
+
+-- Inserts for Product
+
+-- Inserts for Promotional
+
+-- Inserts for shipped items
+
+-- Inserts for Team Rider
+
+-- Inserts for Video
