@@ -90,6 +90,16 @@ INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`)
 INSERT INTO `Sk8Shoppe`.`Gear Set Up` (`Team Rider_riderNum`, `Product_itemNum`) VALUES ('1', '10');
 
 -- Inserts for Orders
+INSERT INTO `Sk8Shoppe`.`Orders` (`orderNum`, `shipDate`, `purchaseDate`, `Customer_customerNum`, `Discount_amount`) VALUES ('1', '2000-01-01', '2000-01-03', '2', '30');
+INSERT INTO `Sk8Shoppe`.`Orders` (`orderNum`, `shipDate`, `purchaseDate`, `Customer_customerNum`, `Discount_amount`) VALUES ('2', '2000-04-01', '2000-04-03', '2', '40');
+INSERT INTO `Sk8Shoppe`.`Orders` (`orderNum`, `shipDate`, `purchaseDate`, `Customer_customerNum`, `Discount_amount`) VALUES ('3', '2000-06-01', '2000-06-03', '2', '60');
+INSERT INTO `Sk8Shoppe`.`Orders` (`orderNum`, `shipDate`, `purchaseDate`, `Customer_customerNum`, `Discount_amount`) VALUES ('4', '2000-08-01', '2000-08-13', '2', '10');
+INSERT INTO `Sk8Shoppe`.`Orders` (`orderNum`, `shipDate`, `purchaseDate`, `Customer_customerNum`, `Discount_amount`) VALUES ('5', '2000-10-01', '2000-10-03', '2', '20');
+INSERT INTO `Sk8Shoppe`.`Orders` (`orderNum`, `shipDate`, `purchaseDate`, `Customer_customerNum`, `Discount_amount`) VALUES ('6', '2010-01-01', '2010-01-09', '2', '80');
+INSERT INTO `Sk8Shoppe`.`Orders` (`orderNum`, `shipDate`, `purchaseDate`, `Customer_customerNum`, `Discount_amount`) VALUES ('7', '2010-02-01', '2010-02-07', '2', '10');
+INSERT INTO `Sk8Shoppe`.`Orders` (`orderNum`, `shipDate`, `purchaseDate`, `Customer_customerNum`, `Discount_amount`) VALUES ('8', '2010-04-01', '2010-04-03', '2', '100');
+INSERT INTO `Sk8Shoppe`.`Orders` (`orderNum`, `shipDate`, `purchaseDate`, `Customer_customerNum`, `Discount_amount`) VALUES ('9', '2020-08-01', '2020-08-05', '2', '30');
+INSERT INTO `Sk8Shoppe`.`Orders` (`orderNum`, `shipDate`, `purchaseDate`, `Customer_customerNum`, `Discount_amount`) VALUES ('10', '2020-09-01', '2020-09-03', '2', '40');
 
 -- Inserts for Picture
 INSERT INTO `Sk8Shoppe`.`Picture` (`Promotional_promoId`, `magazine`, `trick`) VALUES ('2', 'Thrasher', 'SW FS Noseblunt');
