@@ -74,11 +74,34 @@ INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `nam
 INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('56', '1105', 'Alien Workshop', 'Wheels', '69');
 INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('72', '1123', 'Powell Parelta','Deck', '420');
 INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('54', '1111', 'H-Street', 'Baggy Pants','42069');
+INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('10', '1101', 'Real', 'Grip', '100');
+INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('1', '1', 'Bird House', 'Deck', '40');
+INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('45', '2', 'Creature', 'Wheels','120');
+INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('99', '3', 'Girl', 'Shirt', '50');
+INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('103', '4', 'CCS', 'Pants', '69');
+INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('120', '5', 'Elememt','Sweat Suit', '420');
+INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('1000', '6', 'Toy Machine', 'Sweater', '169');
+INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('56', '7', 'Alien Workshop', 'Bandana', '69');
+INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('72', '8', 'Powell Parelta','Beany', '420');
+INSERT INTO `Sk8Shoppe`.`Product` (`quantity_in_stock`, `itemNum`, `brand`, `name`, `price`) VALUES ('54', '9', 'H-Street', 'Baggy Hat','42069');
+
 
 -- Inserts for Promotional
 
 -- Inserts for shipped items
 
 -- Inserts for Team Rider
+
+INSERT INTO `Sk8Shoppe`.`Team Rider` (`riderNum`, `email`, `address`, `fname`, `lname`, `startDate`, `stance`, `status`) VALUES ('1', 'rx123@gmail.com', '6923 SE 42nd Ave', 'Ryder', 'Scoots', '2000-01-01', 'goofy', 'pro');
+INSERT INTO `Sk8Shoppe`.`Team Rider` (`riderNum`, `email`, `address`, `fname`, `lname`, `startDate`, `stance`, `status`) VALUES ('2', 'rxsk83@gmail.com', '6023 SE 482nd Ave', 'Joe', 'Scoops', '2001-01-01', 'regular', 'am');
+INSERT INTO `Sk8Shoppe`.`Team Rider` (`riderNum`, `email`, `address`, `fname`, `lname`, `startDate`, `stance`, `status`) VALUES ('3', 'rx1sk8@gmail.com', '6993 NE 421nd Ave', 'Sam', 'Scots', '2002-01-01', 'goofy', 'am');
+INSERT INTO `Sk8Shoppe`.`Team Rider` (`riderNum`, `email`, `address`, `fname`, `lname`, `startDate`, `stance`, `status`) VALUES ('4', 'rxsk823@gmail.com', '8233 SE 322nd Ave', 'Deandra', 'Scon', '2003-01-01', 'goofy', 'am');
+INSERT INTO `Sk8Shoppe`.`Team Rider` (`riderNum`, `email`, `address`, `fname`, `lname`, `startDate`, `stance`, `status`) VALUES ('5', 'sk8rx123@gmail.com', '3923 SE 432nd Ave', 'Charlie', 'Stos', '2003-01-01', 'goofy', 'pro');
+INSERT INTO `Sk8Shoppe`.`Team Rider` (`riderNum`, `email`, `address`, `fname`, `lname`, `startDate`, `stance`, `status`) VALUES ('6', 'rxs1k283@gmail.com', '6923 NE 420nd Ave', 'Dennis', 'Os', '2004-01-01', 'regular', 'am');
+INSERT INTO `Sk8Shoppe`.`Team Rider` (`riderNum`, `email`, `address`, `fname`, `lname`, `startDate`, `stance`, `status`) VALUES ('7', 'rx123@gmsk8ail.com', '6923 SE 342nd Ave', 'Frank', 'Toad', '2005-01-01', 'goofy', 'am');
+INSERT INTO `Sk8Shoppe`.`Team Rider` (`riderNum`, `email`, `address`, `fname`, `lname`, `startDate`, `stance`, `status`) VALUES ('8', 'rxsk8123@gmail.com', '6421 NE 412nd Ave', 'Max', 'Lorell', '2008-01-01', 'goofy', 'pro');
+INSERT INTO `Sk8Shoppe`.`Team Rider` (`riderNum`, `email`, `address`, `fname`, `lname`, `startDate`, `stance`, `status`) VALUES ('9', 'rx123@gsk8mail.com', '96923 SE 342nd Ave', 'Mac', 'Water', '2021-01-01', 'goofy', 'am');
+INSERT INTO `Sk8Shoppe`.`Team Rider` (`riderNum`, `email`, `address`, `fname`, `lname`, `startDate`, `stance`, `status`) VALUES ('10', 'rskx123@8gmail.com', '6783 N 422nd Ave', 'Kader', 'Purple', '2022-01-01', 'regular', 'pro');
+
 
 -- Inserts for Video
