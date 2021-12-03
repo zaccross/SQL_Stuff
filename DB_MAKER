@@ -1,0 +1,240 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema Sk8Shoppe
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema Sk8Shoppe
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `Sk8Shoppe` DEFAULT CHARACTER SET utf8 ;
+USE `Sk8Shoppe` ;
+
+-- -----------------------------------------------------
+-- Table `Sk8Shoppe`.`Customer`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Sk8Shoppe`.`Customer` (
+  `customerNum` INT NOT NULL,
+  `email` VARCHAR(45) NULL,
+  `fname` VARCHAR(45) NOT NULL,
+  `lname` VARCHAR(45) NOT NULL,
+  `address` VARCHAR(45) NULL,
+  PRIMARY KEY (`customerNum`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Sk8Shoppe`.`Discount`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Sk8Shoppe`.`Discount` (
+  `amount` INT NOT NULL,
+  PRIMARY KEY (`amount`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Sk8Shoppe`.`Orders`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Sk8Shoppe`.`Orders` (
+  `orderNum` INT NOT NULL,
+  `shipDate` DATETIME NOT NULL,
+  `purchaseDate` DATETIME NOT NULL,
+  `Customer_customerNum` INT NOT NULL,
+  `Discount_amount` INT NOT NULL,
+  PRIMARY KEY (`orderNum`),
+  INDEX `fk_Orders_Customer1_idx` (`Customer_customerNum` ASC),
+  INDEX `fk_Orders_Discount1_idx` (`Discount_amount` ASC),
+  CONSTRAINT `fk_Orders_Customer1`
+    FOREIGN KEY (`Customer_customerNum`)
+    REFERENCES `Sk8Shoppe`.`Customer` (`customerNum`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Orders_Discount1`
+    FOREIGN KEY (`Discount_amount`)
+    REFERENCES `Sk8Shoppe`.`Discount` (`amount`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Sk8Shoppe`.`Team Rider`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Sk8Shoppe`.`Team Rider` (
+  `riderNum` INT NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `address` VARCHAR(45) NULL,
+  `fname` VARCHAR(45) NOT NULL,
+  `lname` VARCHAR(45) NOT NULL,
+  `startDate` DATETIME NOT NULL,
+  `stance` VARCHAR(45) NOT NULL,
+  `status` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`riderNum`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Sk8Shoppe`.`Product`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Sk8Shoppe`.`Product` (
+  `quantity_in_stock` INT NOT NULL,
+  `itemNum` INT NOT NULL,
+`brand` VARCHAR(45) NOT NULL,
+  `name` VARCHAR(45) NOT NULL,
+  `price` INT NOT NULL,
+  PRIMARY KEY (`itemNum`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Sk8Shoppe`.`Contest`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Sk8Shoppe`.`Contest` (
+  `code` INT NOT NULL,
+  `terrain` VARCHAR(45) NOT NULL,
+  `date` DATETIME NOT NULL,
+  PRIMARY KEY (`code`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Sk8Shoppe`.`Contestant`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Sk8Shoppe`.`Contestant` (
+  `contestantNum` INT NOT NULL,
+  `ranking` INT NOT NULL,
+  `sponsor` VARCHAR(45) NULL,
+  `fname` VARCHAR(45) NOT NULL,
+  `lname` VARCHAR(45) NOT NULL,
+  `Contest_code` INT NOT NULL,
+  `Product_itemNum` INT NOT NULL,
+  PRIMARY KEY (`contestantNum`),
+  INDEX `fk_Contestant_Contest1_idx` (`Contest_code` ASC),
+  INDEX `fk_Contestant_Product1_idx` (`Product_itemNum` ASC),
+  CONSTRAINT `fk_Contestant_Contest1`
+    FOREIGN KEY (`Contest_code`)
+    REFERENCES `Sk8Shoppe`.`Contest` (`code`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Contestant_Product1`
+    FOREIGN KEY (`Product_itemNum`)
+    REFERENCES `Sk8Shoppe`.`Product` (`itemNum`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Sk8Shoppe`.`Promotional`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Sk8Shoppe`.`Promotional` (
+  `promoId` INT NOT NULL,
+  `releaseData` DATETIME NOT NULL,
+  PRIMARY KEY (`promoId`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Sk8Shoppe`.`Video`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Sk8Shoppe`.`Video` (
+  `Promotional_promoId` INT NOT NULL,
+  `Title` VARCHAR(45) NOT NULL,
+  `length` INT NOT NULL,
+  INDEX `fk_table1_Promotional_idx` (`Promotional_promoId` ASC),
+  PRIMARY KEY (`Promotional_promoId`),
+  CONSTRAINT `fk_table1_Promotional`
+    FOREIGN KEY (`Promotional_promoId`)
+    REFERENCES `Sk8Shoppe`.`Promotional` (`promoId`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Sk8Shoppe`.`Picture`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Sk8Shoppe`.`Picture` (
+  `Promotional_promoId` INT NOT NULL,
+  `magazine` VARCHAR(45) NOT NULL,
+  `trick` VARCHAR(45) NOT NULL,
+  INDEX `fk_Picture_Promotional1_idx` (`Promotional_promoId` ASC),
+  PRIMARY KEY (`Promotional_promoId`),
+  CONSTRAINT `fk_Picture_Promotional1`
+    FOREIGN KEY (`Promotional_promoId`)
+    REFERENCES `Sk8Shoppe`.`Promotional` (`promoId`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+-- -----------------------------------------------------
+-- Table `Sk8Shoppe`.`Appears in Video`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Sk8Shoppe`.`Appears in Video` (
+  `Team Rider_riderNum` INT NOT NULL,
+  `Promotional_promoId` INT NOT NULL,
+  PRIMARY KEY (`Team Rider_riderNum`, `Promotional_promoId`),
+  INDEX `fk_Appears in Video_Promotional1_idx` (`Promotional_promoId` ASC),
+  CONSTRAINT `fk_Appears in Video_Team Rider1`
+    FOREIGN KEY (`Team Rider_riderNum`)
+    REFERENCES `Sk8Shoppe`.`Team Rider` (`riderNum`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Appears in Video_Promotional1`
+    FOREIGN KEY (`Promotional_promoId`)
+    REFERENCES `Sk8Shoppe`.`Promotional` (`promoId`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Sk8Shoppe`.`Gear Set Up`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Sk8Shoppe`.`Gear Set Up` (
+  `Team Rider_riderNum` INT NOT NULL,
+  `Product_itemNum` INT NOT NULL,
+  PRIMARY KEY (`Team Rider_riderNum`, `Product_itemNum`),
+  INDEX `fk_Gear Set Up_Product1_idx` (`Product_itemNum` ASC),
+  CONSTRAINT `fk_Gear Set Up_Team Rider1`
+    FOREIGN KEY (`Team Rider_riderNum`)
+    REFERENCES `Sk8Shoppe`.`Team Rider` (`riderNum`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Gear Set Up_Product1`
+    FOREIGN KEY (`Product_itemNum`)
+    REFERENCES `Sk8Shoppe`.`Product` (`itemNum`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Sk8Shoppe`.`shipped items`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Sk8Shoppe`.`shipped items` (
+  `Product_itemNum` INT NOT NULL,
+  `Orders_orderNum` INT NOT NULL,
+  PRIMARY KEY (`Product_itemNum`, `Orders_orderNum`),
+  INDEX `fk_shipped items_Orders1_idx` (`Orders_orderNum` ASC),
+  CONSTRAINT `fk_shipped items_Product1`
+    FOREIGN KEY (`Product_itemNum`)
+    REFERENCES `Sk8Shoppe`.`Product` (`itemNum`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_shipped items_Orders1`
+    FOREIGN KEY (`Orders_orderNum`)
+    REFERENCES `Sk8Shoppe`.`Orders` (`orderNum`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
