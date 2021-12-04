@@ -12,7 +12,7 @@ or die('Error connecting to MySQL server.');
   <title>Find Products By Brand</title>
   </head>
   
-  <body bgcolor="gray">
+  <body bgcolor="white">
   
   
   <hr>
@@ -27,7 +27,6 @@ $brand = mysqli_real_escape_string($conn, $brand);
 // better to use prepared statements
 
 $query = "SELECT
-	            itemNum, 
               `name`, 
               price, 
               quantity_in_stock
