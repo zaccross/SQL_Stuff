@@ -32,8 +32,8 @@ $code = mysqli_real_escape_string($conn, $brand);
 $query = "SELECT
 	            Concat(fname, ' ', lname) as Contestant_Name,
               ranking,
-              p.brand,
-              p.`name`
+              brand,
+              `name`
 
           FROM
 	            Contestant c 
@@ -62,4 +62,29 @@ Result of query:
 
 <?php
 $result = mysqli_query($conn, $query)
-                                                                                                                                                                   1,2           Top
+or die(mysqli_error($conn));
+
+print "<pre>";
+while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
+  {
+    print "\n";
+    print "$row[Contestant_name]  $row[ranking] $row[brand]  $row[`name`]";
+  }
+print "</pre>";
+
+mysqli_free_result($result);
+
+mysqli_close($conn);
+
+?>
+
+<p>
+<hr>
+
+<p>
+<a href="findBrand.txt" >Contents</a>
+of the PHP program that created this page. 	 
+ 
+</body>
+</html>
+                                                                                                                        1,2           Top
