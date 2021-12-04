@@ -4,6 +4,6 @@ $server = "ix.cs.uoregon.edu";
 $dbname ="Sk8Shoppe";
 $user = "guest";
 $pass = "guest";
-$port="3716";
+$port="3617";
 
 ?>                                                                                   
