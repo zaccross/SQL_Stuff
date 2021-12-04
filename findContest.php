@@ -1,6 +1,5 @@
 
 
-
 <?php
 
 include('finalConnectionData.txt');
@@ -25,7 +24,7 @@ or die('Error connecting to MySQL server.');
 
 $code = $_POST['code'];
 
-$code = mysqli_real_escape_string($conn, $brand);
+$code = mysqli_real_escape_string($conn, $code);
 // this is a small attempt to avoid SQL injection
 // better to use prepared statements
 
@@ -33,7 +32,7 @@ $query = "SELECT
 	            Concat(fname, ' ', lname) as Contestant_Name,
               ranking,
               brand,
-              `name`
+              name
 
           FROM
 	            Contestant c 
@@ -44,7 +43,7 @@ $query = "SELECT
 	
           WHERE
 	             cc.`code` =";
-$query = $query."'".$code."' ORDER BY 2;";
+$query = $query." ".$code." ORDER BY ranking;";
 
 ?>
 
@@ -68,7 +67,7 @@ print "<pre>";
 while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
   {
     print "\n";
-    print "$row[Contestant_name]  $row[ranking] $row[brand]  $row[`name`]";
+    print "$row[ranking]   $row[Contestant_Name]   $row[brand]    $row[name]";
   }
 print "</pre>";
 
@@ -82,9 +81,8 @@ mysqli_close($conn);
 <hr>
 
 <p>
-<a href="findBrand.txt" >Contents</a>
+<a href="findContest.txt" >Contents</a>
 of the PHP program that created this page. 	 
  
 </body>
 </html>
-                                                                                                                        1,2           Top
