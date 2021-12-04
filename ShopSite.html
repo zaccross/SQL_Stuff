@@ -12,9 +12,9 @@
 <hr>
 
 <p>
+APPLICATION 1:	 Search for items by Brand <br>
 Please enter a brand name to get a list of all related products.
 Current brands include: ['Real', 'Girl', and 'Alien Workshop']
-
 <p>
 
 <form action="findBrand.php" method="POST">
@@ -24,30 +24,38 @@ Current brands include: ['Real', 'Girl', and 'Alien Workshop']
 <input type="reset" value="erase">
 </form>
 
+
 <hr>
 <p>
-       
+APPLICATION 2:	  Search for contest winners by contest <br>       
 Please enter a contest code to get a list of the winners and their prizes.
-Current brands include: ['1', '2', '3']
+Current contest with winners only include: ['1', '2', '4']
 
 <p>
 
-<form action="findContestWinner.php" method="POST">
+<form action="findContest.php" method="POST">
 
 <input type="text" name="code"> <br>
 <input type="submit" value="submit">
 <input type="reset" value="erase">
 </form>
 
+
 <hr>
 
 <p>
-<a href=".txt" >Contents</a>
+<a href="mainsite.txt" >Contents</a>
 of this page.
 
 <p>
-<a href="brand.txt" >Contents</a>
-of the PHP page that gets called.
+<a href="findBrand.txt" >Contents</a>
+of the PHP page that gets called for application 1 (Find product by brand).
+
+<p>
+<a href="findContest.txt" >Contents</a>
+of the PHP page that gets called for application 2 (Find winners of contest).
+
+<p>
 (And the <a href="finalConnectionData.txt" >connection data</a>,
 kept separately for security reasons.)
 
@@ -55,4 +63,4 @@ kept separately for security reasons.)
 
 
 </body>
-</html>                                          
+</html>             
