@@ -42,6 +42,69 @@ Current contest with winners only include: ['1', '2', '4']
 
 
 <hr>
+<p>
+APPLICATION 3:    View your order total by looking up your order number <br>
+Please enter an order number to view the total price after discount.
+Current order numbers  only include: ['1', '2',..., '10']
+
+<p>
+
+<form action="findOrderPrice.php" method="POST">
+
+<input type="text" name="code"> <br>
+<input type="submit" value="submit">
+<input type="reset" value="erase">
+</form>
+
+<hr>
+<p>
+APPLICATION 4:    View your favorite team rider's set up <br>
+Please enter the last name of a team rider. Examples include ['Scoots','Scoops', 'Os'].
+
+<p>
+
+<form action="findRiderGear.php" method="POST">
+
+<input type="text" name="code"> <br>
+<input type="submit" value="submit">
+<input type="reset" value="erase">
+</form>
+
+<hr>
+<p>
+APPLICATION 5:    Recommendation System <br>
+Please enter a customer number for a customer specific recommendation.<br>
+Examples include ['1','2',...,'1O'].
+
+<p>
+
+<form action="findRec.php" method="POST">
+
+<input type="text" name="code"> <br>
+<input type="submit" value="submit">
+<input type="reset" value="erase">
+</form>
+
+
+<hr>
+<p>
+APPLICATION 6:    Making a Customer Account <br>
+Please enter your first and last name, as well as an email and address below<br>
+
+
+<p>
+
+<form action="addCustomer.php" method="POST">
+
+<input type="text" name="firstName"> <br>
+<input type="text" name="lastName"> <br>
+<input type="text" name="email"> <br>
+<input type="text" name="address"> <br>
+<input type="submit" value="submit">
+<input type="reset" value="erase">
+</form>
+
+<hr>
 
 <p>
 <a href="mainsite.txt" >Contents</a>
@@ -56,6 +119,22 @@ of the PHP page that gets called for application 1 (Find product by brand).
 of the PHP page that gets called for application 2 (Find winners of contest).
 
 <p>
+<a href="findOrderPrice.txt" >Contents</a>
+of the PHP page that gets called for application 3 (Find order price after discount).
+
+<p>
+<a href="findRiderGear.txt" >Contents</a>
+of the PHP page that gets called for application 4 (Find Rider Gear).
+
+<p>
+<a href="findRec.txt" >Contents</a>
+of the PHP page that gets called for application 5 (Find Recommendations).
+
+<p>
+<a href="addCustomer.txt" >Contents</a>
+of the PHP page that gets called for application 6 (Adding a Customer Account).
+
+<p>
 (And the <a href="finalConnectionData.txt" >connection data</a>,
 kept separately for security reasons.)
 
@@ -63,4 +142,4 @@ kept separately for security reasons.)
 
 
 </body>
-</html>             
+</html>               
