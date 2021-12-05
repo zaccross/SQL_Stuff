@@ -13,15 +13,14 @@ if ($conn->connect_error) {
 }
 
 $newNum = $_POST['newNum'];
-$email = $_POST['email'];
 $fname = $_POST['fname'];
+$email = $_POST['email'];
 $lname = $_POST['lname'];
-$add = $_POST['add']
+$add = $_POST['add'];
 
 
 
-
-$sql = "INSERT INTO `Sk8Shoppe`.`Customer` (`customerNum`, `email`, `fname`, `lname`, `address`) VALUES ('11', 'x123@gmail.com', 'John', 'Smith', '1123 SE 17th Ave');";
+$sql = "INSERT INTO `Sk8Shoppe`.`Customer` (`customerNum`, `email`, `fname`, `lname`, `address`) VALUES ('$newNum', '$email', '$fname', '$lname', '$add');";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
@@ -30,6 +29,4 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
-?>
-~                                                                                                                                                                                    
-~             
+?>          
