@@ -6,7 +6,8 @@
 <body bgcolor="white">
 
 <h3>Connecting to Sk8Shoppe using MySQL/PHP</h3>
-
+<h3>Final Project for CIS 551 For Zac Cross :)</h3>
+<h3>Below you will find the 10 applications to access my Sk8Shoppe Database, and then the .txt files that created them. </h3>
 
 
 <hr>
@@ -111,6 +112,64 @@ And Address (if living in Boring Town)<br>
 </form>
 
 <hr>
+<p>
+APPLICATION 7:   CHECK for  Making a Customer Account <br>
+Press Submit to view all customer account numbers and names to see if app 6 is successful <br>
+
+
+<p>
+
+<form action="CHECKaddCustomer.php" method="POST">
+<input type="submit" value="submit">
+<input type="reset" value="erase">
+</form>
+
+
+<hr>
+
+<p>
+APPLICATION 8:   Search for a Team Rider's Promotional Content <br>
+Please enter a Rider's First and Last name to get a list of videos and ads they appear in:.
+Current riders include: ['Ryder Scoots', 'Deandra Scon']
+<p>
+
+<form action="findRiderPromo.php" method="POST">
+
+<input type="text" name="name"> <br>
+<input type="submit" value="submit">
+<input type="reset" value="erase">
+</form>
+
+<hr>
+
+<p>
+APPLICATION 9:  Cancel and item on an order / remove and item from an order<br>
+Please enter a valid Customer and Item number to delete the data:.
+
+<p>
+
+<form action="deleteCustomer.php" method="POST">
+<input type="text" name="num"> <br>
+<input type="text" name="itemNum"> <br>
+<input type="submit" value="submit">
+<input type="reset" value="erase">
+</form>
+
+<hr>
+
+<p>
+APPLICATION 10: CHECK FOR APPLICATION 9: Cancel and item on an order / remove and item from an order<br>
+Prints out list of customer nums and products ordered to check delete function of app 9.
+
+<p>
+
+<form action="CHECKdeleteCustomer.php" method="POST">
+<input type="submit" value="submit">
+<input type="reset" value="erase">
+</form>
+
+
+<hr>
 
 <p>
 <a href="mainsite.txt" >Contents</a>
@@ -141,6 +200,22 @@ of the PHP page that gets called for application 5 (Find Recommendations).
 of the PHP page that gets called for application 6 (Adding a Customer Account).
 
 <p>
+<a href="addCustomer.txt" >Contents</a>
+of the PHP page that gets called for application 7 (CHECK for Adding a Customer Account).
+
+<p>
+<a href="findRiderPromo.txt" >Contents</a>
+of the PHP page that gets called for application 8 (Find a rider's promotional content).
+
+<p>
+<a href="deleteCustomer.txt" >Contents</a>
+of the PHP page that gets called for application 9 (Delete a customer's product order).
+
+<p>
+<a href="CHECKdeleteCustomer.txt" >Contents</a>
+of the PHP page that gets called for application 10 (CHECK for Deleting a customer's product order).
+
+<p>
 (And the <a href="finalConnectionData.txt" >connection data</a>,
 kept separately for security reasons.)
 
@@ -148,4 +223,4 @@ kept separately for security reasons.)
 
 
 </body>
-</html>                    
+</html>               
