@@ -89,17 +89,23 @@ Examples include ['1','2',...,'1O'].
 <hr>
 <p>
 APPLICATION 6:    Making a Customer Account <br>
-Please enter your first and last name, as well as an email and address below<br>
+Please enter your information in the following order:<br>
+A Unique Customer Number <br>
+First Name <br>
+Last Name <br>
+Email <br>
+And Address (if living in Boring Town)<br>
 
 
 <p>
 
 <form action="addCustomer.php" method="POST">
 
-<input type="text" name="firstName"> <br>
-<input type="text" name="lastName"> <br>
+<input type="text" name="newNum"><br>	
+<input type="text" name="fname"> <br>
+<input type="text" name="lname"> <br>
 <input type="text" name="email"> <br>
-<input type="text" name="address"> <br>
+<input type="text" name="add"> <br>
 <input type="submit" value="submit">
 <input type="reset" value="erase">
 </form>
@@ -142,4 +148,4 @@ kept separately for security reasons.)
 
 
 </body>
-</html>               
+</html>                    
